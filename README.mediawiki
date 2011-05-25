@@ -1,0 +1,14 @@
+== Introduction ==
+The great Dream.In.Code community news application is now available for iOS! Simply browse the news, share and join the discussion within seconds!
+
+The UI looks like a newspaper because I like it like this(I'm the developer, I choose! :P), also it makes the app looks more professional and text better for reading.
+
+=== Screenshots ===
+
+[[File:http://pixhost.tk/img/j5pv.png]]
+[[File:http://pixhost.tk/img/f4tz.png]]
+[[File:http://pixhost.tk/img/y5rh.png]]
+
+=== Download ===
+
+[http://itunes.apple.com/app/dream-in-code-news/id434103805 [[File:http://pixhost.tk/img/4v4i.png]]]
