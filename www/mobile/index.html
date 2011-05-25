@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="OfflineApp.manifest">
+<head>
+    <title>Dream.In.Code</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, maximum-scale=1, width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="YES">
+    <link rel="apple-touch-icon" href="Images/WebClipIcon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../Parts/ActivityIndicator.css">
+    <link rel="stylesheet" href="../Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/RSSSupport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="content">
+        <div id="header">
+            <div id="headerGradient">
+            </div>
+            <div id="feedName"></div>
+            <div id="todaysDate"></div>
+            <div id="topSplitter1"></div>
+            <div id="topSplitter2"></div>
+        </div>
+        <div id="StackLayout">
+            <div id="frontPage">
+                <ul id="headlineList">
+                    <li id="listRowTemplate" class="listRowTemplate_template first" onclick="articleClicked(event)" style="">
+                        <div id="headlineTitle" class="label_template">Article Title</div>
+                        <div id="arrow" class="arrow_template"></div>
+                        <div class="text2_template" id="headlineDescription"></div>
+                        <div id="headlineSplitter" class="box1_template"></div>
+                    </li>
+                </ul>
+                <img id="activityIndicator" src="../Images/ActivityIndicator.png" style="-webkit-animation-name: none; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; ">
+                <div id="bodySplitter"></div>
+            </div>
+            <div id="articlePage">
+                <div id="articleTitle"></div>
+                <div id="articleBox">
+                    <div id="articleDescription"></div>
+                    <div id="articleDate"></div>
+                </div>
+                <div id="navigation">
+                    <div id="readMore"></div>
+                    <div id="backToHeadlines"></div>
+                </div>
+                <div id="articleBottomSplitter"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

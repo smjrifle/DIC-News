@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="safari/OfflineApp.manifest">
+<head>
+    <title>Dream.In.Code</title>
+    <!--[if IE]><script>document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script><![endif]-->
+    <base href="safari/">
+    <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="../Parts/redirector.js"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../Parts/ActivityIndicator.css">
+    <link rel="icon" href="Images/Favicon.ico" sizes="32x32 16x16">
+    <script type="text/javascript" src="../Scripts/RSSSupport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="content">
+        <div id="header">
+            <div id="feedName"></div>
+            <div id="todaysDate"></div>
+        </div>
+        <div id="headerDesign"></div>
+        <div id="headerDesign1"></div>
+        <div id="splitLayout">
+            <div id="articleListView">
+                <ul id="headlineList">
+                    <li id="listRowTemplate" class="listRowTemplate_template first">
+                        <div id="headlineTitle" class="headlineTitle_template"></div>
+                        <div class="headlineDescription_template headlineDescription1_template" id="headlineDescription"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="splitter">
+                <div id="splitThumb"></div>
+            </div>
+            <div id="articleView">
+                <div id="articleTitle"></div>
+                <div id="articleDate"></div>
+                <div id="articleBox">
+                    <div id="articleDescription"></div>
+                </div>
+                <div id="readMore"></div>
+            </div>
+        </div>
+        <img id="activityIndicator" src="../Images/ActivityIndicator.png" style="-webkit-animation-name: none; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; ">
+    </div>
+</body>
+</html>

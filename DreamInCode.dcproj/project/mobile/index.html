@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="OfflineApp.manifest">
+<head>
+    <title>Dream.In.Code</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, maximum-scale=1, width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="YES">
+    <link rel="apple-touch-icon" href="Images/WebClipIcon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="../Parts/ActivityIndicator.css">
+    <link rel="stylesheet" href="../Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/RSSSupport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="content">
+        <div apple-part="com.apple.Dashcode.part.box" id="header">
+            <div apple-part="com.apple.Dashcode.part.rectanglewebshape" apple-style="image-theme: 1; image-shape: 3; image-button-type: 3; image-opacity: 1.00; image-top-color: 0.88308537,0.88308537,0.88308537,1; image-bottom-color: 0.94903487,0.94903487,0.94903487,1; image-radius: 0,0,0,0; image-border: 0; image-border-color: 0.529399991,0.529399991,0.529399991,1; image-border-width: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;" id="headerGradient">
+            </div>
+            <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="feedName" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+            <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="todaysDate" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+            <div apple-part="com.apple.Dashcode.part.box" id="topSplitter1"></div>
+            <div apple-part="com.apple.Dashcode.part.box" id="topSplitter2"></div>
+        </div>
+        <div apple-part="com.apple.Dashcode.part.StackLayout" id="StackLayout">
+            <div id="frontPage" apple-part-locked="true">
+                <ul apple-part="com.apple.Dashcode.part.edgeToEdgeList" id="headlineList" class="">
+                    <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template first" onclick="articleClicked(event)" style="">
+                        <div id="headlineTitle" apple-part="com.apple.Dashcode.part.webtext" class="label_template" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;">Article Title</div>
+                        <div id="arrow" apple-part="com.apple.Dashcode.part.box" class="arrow_template"></div>
+                        <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children text2_template" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="headlineDescription" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                        <div apple-part="com.apple.Dashcode.part.box" id="headlineSplitter" class="box1_template"></div>
+                    </li>
+                </ul>
+                <img id="activityIndicator" apple-part="com.apple.Dashcode.part.activityindicator" src="../Images/ActivityIndicator.png" style="-webkit-animation-name: none; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; ">
+                <div apple-part="com.apple.Dashcode.part.box" id="bodySplitter"></div>
+            </div>
+            <div id="articlePage" apple-part-locked="true">
+                <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleTitle" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                <div apple-part="com.apple.Dashcode.part.box" id="articleBox">
+                    <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleDescription" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                    <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleDate" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                </div>
+                <div apple-part="com.apple.Dashcode.part.box" id="navigation">
+                    <div apple-part="com.apple.Dashcode.part.goforwardbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 12; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1; image-bottom-color: 1,1,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0.750011444,0.750011444,0.750011444; image-border-width: 1; shine-on: 0; shine-strength: 0.33; shine-alpha-level: 0.00; shine-height: 0.50; glass-arc-height: 0.00; shadow-include-shadow: 0;" id="readMore"></div>
+                    <div apple-part="com.apple.Dashcode.part.gobackbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 11; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1; image-bottom-color: 1,1,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0.750011444,0.750011444,0.750011444; image-border-width: 1; shine-on: 0; shine-strength: 0.33; shine-alpha-level: 0.00; shine-height: 0.50; glass-arc-height: 0.00; shadow-include-shadow: 0;" id="backToHeadlines"></div>
+                </div>
+                <div apple-part="com.apple.Dashcode.part.box" id="articleBottomSplitter"></div>
+            </div>
+            <div id="webPage" apple-part-locked="true">
+                <iframe src="index.html" width="100%" frameborder="0" scrolling="auto">
+                    &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

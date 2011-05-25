@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html manifest="safari/OfflineApp.manifest">
+<head>
+    <title>Dream.In.Code</title>
+    <!--[if IE]><script>document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script><![endif]-->
+    <base href="safari/">
+    <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="../Parts/redirector.js"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../Parts/ActivityIndicator.css">
+    <link rel="icon" href="Images/Favicon.ico" sizes="32x32 16x16">
+    <script type="text/javascript" src="../Scripts/RSSSupport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="content" apple-part="com.apple.Dashcode.part.box">
+        <div id="header" apple-part="com.apple.Dashcode.part.rectanglewebshape" apple-style="image-theme: 1; image-shape: 3; image-button-type: 3; image-opacity: 1.00; image-top-color: 0.780636311,0.780636311,0.780636311,1; image-bottom-color: 0.923369169,0.923369169,0.923369169,1; gradient-bri-diff: -0.350377649; image-radius: 0,0,0,0; image-border: 0; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: -0.66; shadow-include-shadow: 0;">
+            <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="feedName"></div>
+            <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="todaysDate"></div>
+        </div>
+        <div apple-part="com.apple.Dashcode.part.box" id="headerDesign"></div>
+        <div apple-part="com.apple.Dashcode.part.box" id="headerDesign1"></div>
+        <div id="splitLayout" apple-part="com.apple.Dashcode.part.splitlayout">
+            <div id="articleListView" apple-part="com.apple.Dashcode.part.box" apple-part-locked="true">
+                <ul id="headlineList" apple-part="com.apple.Dashcode.part.widgetList" class="">
+                    <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template first">
+                        <div id="headlineTitle" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children headlineTitle_template" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                        <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children headlineDescription_template headlineDescription1_template" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="headlineDescription" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="splitter" apple-part="com.apple.Dashcode.part.splitlayoutdivider" apple-style="image-theme: 1; image-shape: 3; image-button-type: 3; image-opacity: 1.00; image-top-color: 0.98,0.98,0.98,1; image-bottom-color: 0.87,0.87,0.87,1; image-radius: 0,0,0,0; image-border: 1; image-border-color: 0.587518096,0.587518096,0.587518096,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;" apple-group="splitter">
+                <div apple-part="com.apple.Dashcode.part.box" id="splitThumb"></div>
+            </div>
+            <div id="articleView" apple-part="com.apple.Dashcode.part.box" apple-part-locked="true">
+                <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleTitle" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleDate" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                <div id="articleBox" apple-part="com.apple.Dashcode.part.desktopBox">
+                    <div apple-part="com.apple.Dashcode.part.webtext" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="articleDescription" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+                </div>
+                <div id="readMore" apple-part="com.apple.Dashcode.part.pushbutton" class="apple-no-children" apple-text-overflow="ellipsis" apple-style="image-theme: 1; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.958709061,0.958709061,0.958709061,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.2; image-border-width: 1; shine-on: 0; shine-strength: 0.17; shine-alpha-level: 0.04; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.49; embossed-highlight: 0.3; shadow-include-shadow: 0;"></div>
+            </div>
+        </div>
+        <img id="activityIndicator" apple-part="com.apple.Dashcode.part.activityindicator" src="../Images/ActivityIndicator.png" style="-webkit-animation-name: none; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; ">
+    </div>
+</body>
+</html>

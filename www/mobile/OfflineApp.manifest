@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+NETWORK:
+http://feeds.feedburner.com/dic_featured?
+
+CACHE:
+../Images/ActivityIndicator.png
+../Images/ActivityIndicatorWhite.png
+../Images/chevron.png
+../index.html
+attributes.js
+Images/WebClipIcon.png
+index.html
+main.css
+main.js
+Parts/Images/backToHeadlines.png
+Parts/Images/backToHeadlines_clicked.png
+Parts/Images/headerGradient.png
+Parts/Images/readMore.png
+Parts/Images/readMore_clicked.png
+Parts/parts.js
+../Parts/ActivityIndicator.css
+../Parts/core/external/sizzle_c.js
+../Parts/license.txt
+../Parts/redirector.js
+../Parts/Transitions.css
+../Scripts/RSSSupport.js
