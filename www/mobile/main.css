@@ -15,9 +15,9 @@ body {
     position: relative;
     -webkit-margin-top-collapse: separate;
     -webkit-margin-bottom-collapse: separate;
-    width: auto;
-    margin-right: 0px;
     margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
     min-height: 398px;
     height: auto;
 }
@@ -27,12 +27,13 @@ body {
     -webkit-margin-top-collapse: separate;
     -webkit-margin-bottom-collapse: separate;
     position: relative;
-    margin-left: 0px;
     z-index: 0;
-    width: auto;
     margin-right: 0px;
+    margin-left: 0px;
+    width: auto;
     min-height: 322px;
     height: auto;
+    margin-top: 0px;
 }
 
 #frontPage {
@@ -269,16 +270,16 @@ body {
 #headlineList {
     overflow: hidden;
     padding: 0px;
-    margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     -webkit-margin-top-collapse: separate;
     -webkit-margin-bottom-collapse: separate;
     position: relative;
-    margin-top: 2px;
-    width: auto;
     cursor: default;
     -webkit-user-select: none;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: auto;
 }
 
 #readMore {
@@ -417,11 +418,14 @@ body {
     border-style: solid;
     -webkit-margin-top-collapse: separate;
     -webkit-margin-bottom-collapse: separate;
+    display: block;
+    border-width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
     position: relative;
     width: auto;
-    border-width: 0px;
+    margin-right: 0px;
     height: 62px;
-    margin-top: 0px;
 }
 
 #headerGradient {
@@ -455,4 +459,19 @@ body {
     margin-left: auto;
     left: 144px;
     margin-right: auto;
+}
+
+#webPage {
+    min-height: 322px;
+}
+
+#pageFrame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    width: 317px;
+    height: 415px;
+    visibility: hidden;
+    border-width: 1px;
 }

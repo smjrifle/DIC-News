@@ -80,7 +80,17 @@ function readMoreClicked(event)
             }
         }
         
-        window.location = link;
+        document.getElementById("pageFrame").style.visibility="visible";
+        document.getElementById("pageFrame").src = link;
+        
+        // window.location = link;
+        
+        /*var views = document.getElementById('stackLayout');
+        var settings = document.getElementById('webPage');
+        
+        if(views && views.object && settings) {
+            views.object.setCurrentView(settings);
+        }*/
     }
     
 }
