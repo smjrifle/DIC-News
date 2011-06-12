@@ -80,6 +80,7 @@ function readMoreClicked(event)
             }
         }
         
+        document.getElementById("content").style.visibility="hidden";
         document.getElementById("pageFrame").style.visibility="visible";
         document.getElementById("pageFrame").src = link;
         

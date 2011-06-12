@@ -72,6 +72,7 @@
 		var change = Math.abs(x1-x2+y1-y2+z1-z2);
 
 		if (change > sensitivity) {
+            document.getElementById("content").style.visibility="visible";
             document.getElementById("pageFrame").style.visibility="hidden";
 		}
 
